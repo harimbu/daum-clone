@@ -327,6 +327,11 @@ section {
   border-bottom: 1px solid var(--gray-light);
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
+}
+
+.news_items > li:last-child {
+  border-bottom: none;
 }
 
 .news_02 .news__list {
@@ -334,6 +339,16 @@ section {
 
 .news_02 .news__list li {
   padding: 10px 0;
+}
+
+.news_02 .news__card {
+  width: 189px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.news_02 .news__card p {
+  padding-top: 10px;
 }
 
 /* aside / banner */
@@ -409,6 +424,63 @@ aside {
   color: var(--accent);
   font-family: '돋움';
   font-size: 13px;
+}
+
+/* section / news_03 */
+.news_03 .news {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  font-size: 13px;
+}
+
+.news_03 ul li {
+}
+
+.news_03 ul li a {
+  display: block;
+}
+
+.news_03 ul li a p {
+  padding-top: 10px;
+}
+
+.news_03 ul li .category {
+  display: block;
+  color: var(--accent);
+  padding-top: 6px;
+}
+
+.news_03 ul li a .photo {
+  position: relative;
+}
+
+.news_03 ul li a .photo .blue_bg {
+  background: var(--accent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.news_03 ul li a:hover .photo .blue_bg {
+  opacity: 0.5;
+}
+
+.news_03 ul li a .photo i {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  background: #0aaec1;
+  color: #fff;
 }
 
 /* footer */
